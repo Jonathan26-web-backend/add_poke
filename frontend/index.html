@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex API Demo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <h1>Pokedex API Demo</h1>
+    <p><b>API:</b> http://localhost:5000</p>
+
+    <!-- LOGIN -->
+    <section>
+        <h2>Login/Logout</h2>
+        <input id="username" placeholder="username">
+        <input id="password" type="password" placeholder="password">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn">Logout</button>
+        <p id="loginStatus">Not logged in</p>
+    </section>
+
+    <!-- POKEMON LIST -->
+    <section>
+        <h2>Pokemon</h2>
+        <button id="loadPokemonBtn">Load Pokemon</button>
+        <ul id="pokemonList"></ul>
+        <p id="pokemonStatus"></p>
+    </section>
+
+    <!-- SEARCH -->
+    <section>
+        <h2>Search Pokemon</h2>
+        <input id="searchName" placeholder="pokemon name">
+        <button id="searchBtn">Search</button>
+        <p id="searchResult"></p>
+    </section>
+
+    <!-- ADD POKEMON (admin/editor only) -->
+    <section id="addSection">
+        <h2>Add Pokemon</h2>
+        <label>Name</label>
+        <input id="addName" placeholder="name">
+
+        <label>Type</label>
+        <input id="addType" placeholder="type">
+
+        <label>HP</label>
+        <input id="addHp" placeholder="hp">
+        <button id="addBtn">Add Pokemon</button>
+        <p id="addStatus"></p>
+    </section>
+
+    <!-- DELETE (admin only) -->
+    <section id="deleteSection">
+        <h2>Delete Pokemon</h2>
+        <input id="deleteId" placeholder="pokemon id">
+        <button id="deleteBtn">Delete Pokemon</button>
+        <p id="deleteStatus"></p>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
