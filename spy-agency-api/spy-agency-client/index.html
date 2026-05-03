@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Mission API</title>
+</head>
+<body>
+    <h1>Mission API</h1>
+
+    <p><b>API:</b> http://localhost:5000</p>
+
+    <!-- LOGIN -->
+    <section>
+        <h2>Login/Logout</h2>
+
+        <input id="username" placeholder="username">
+        <input id="password" type="password" placeholder="password">
+
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn">Logout</button>
+
+        <p id="loginStatus">Not logged in</p>
+    </section>
+
+    <!-- mission -->
+    <section>
+        <h2>Missions</h2>
+
+        <button id="loadMoviesBtn">Load Missions</button>
+
+        <ul id="missions"></ul>
+
+        <p id="missionStatus"></p>
+    </section>
+
+   
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
